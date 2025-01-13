@@ -1,4 +1,4 @@
-package com.example.pieskoapka
+package com.example.pieskoapka.ui.details
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
@@ -25,6 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.pieskoapka.Routes
 
 @Composable
 fun DogDetailsScreen(navController: NavController, dogName: String, breed: String) {

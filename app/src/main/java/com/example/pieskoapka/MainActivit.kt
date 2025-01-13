@@ -8,9 +8,13 @@ import com.example.pieskoapka.ui.theme.PieskoApkaTheme
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.pieskoapka.ui.details.DogDetailsScreen
+import com.example.pieskoapka.ui.dogs.DogListApp
+import dagger.hilt.android.AndroidEntryPoint
 
 data class Dog(val name: String, val breed: String, var isFavorite: Boolean = false)
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,4 +42,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+
 

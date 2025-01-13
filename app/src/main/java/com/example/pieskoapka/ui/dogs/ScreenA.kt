@@ -1,4 +1,4 @@
-package com.example.pieskoapka
+package com.example.pieskoapka.ui.dogs
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -35,10 +35,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.pieskoapka.Dog
+import com.example.pieskoapka.Routes
 
 @Composable
 fun DogListApp(navController: NavController) {
@@ -150,7 +151,7 @@ fun DogListApp(navController: NavController) {
                 }, onDeleteClick = {
                     dogs.remove(dog)
                 }, onDogClick = {
-                    navController.navigate(Routes.ScreenB+"/${dog.name}/${dog.breed}")
+                    navController.navigate(Routes.ScreenB +"/${dog.name}/${dog.breed}")
                 })
             }
         }
